@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book6"
+    tools:context="com.karthi.acpage1.Page1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game and Gain"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text=" Level-1 "
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/level3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/level3"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/qus">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#F5EFE9"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="\tWrite down as many different words you can think of that starts with letter 'd'."
+        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\tTRY MINIMUM 50 WORDS IN TWO MINUTES TIME."
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/qus"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#F5EFE9"
+        android:text="NOTE:\n\t\tDo not use various forms of words, such as do, doing, done, does, etc."
+        android:textSize="15sp" />
+        <TextView
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[ONCE YOU CLICK THE START BUTTON, THE COUNT DOWN STARTS.]"
+            android:textColor="@android:color/background_dark"
+            android:background="#F5EFE9"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+        android:layout_below="@id/note"
+        android:id="@+id/button"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/butwhite"
+        android:onClick="onGame1"
+        android:text="Start" />
+
+
+</RelativeLayout>

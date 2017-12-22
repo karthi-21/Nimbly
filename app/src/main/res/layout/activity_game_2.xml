@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    tools:context="com.karthi.acpage1.Game2"
+    tools:ignore="RtlSymmetry">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPEAK IT-1"
+        android:textSize="39sp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/background_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:id="@+id/heading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="Can you pronounce the words?"
+        android:layout_below="@id/heading"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/headqus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headqus"
+        android:textColor="@android:color/background_dark"
+        android:text="1.Randezvous-\t\t'rɒndɪvuː'\t\t"
+        android:textSize="20sp"
+        android:id="@+id/randezvous"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headqus"
+        android:layout_toEndOf="@id/randezvous"
+        android:src="@drawable/ic_action_sound"
+        android:background="@color/transparent"
+        android:id="@+id/but1"
+        android:onClick="onBut1"
+        android:contentDescription="speak"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tMeeting at agreed time or place."
+        android:layout_below="@id/randezvous"
+        android:id="@+id/randezvoustxt"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+    <!-- 1 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/randezvoustxt"
+        android:text="2.Apathy-\t\t'Ap'-e-thiː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/apathy"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/apathytxt"
+        android:layout_toEndOf="@+id/apathy"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:id="@+id/but2"
+        android:onClick="onBut2"
+        android:src="@drawable/ic_action_sound"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tLack of intrest."
+        android:layout_below="@id/apathy"
+        android:textSize="18sp"
+        android:id="@+id/apathytxt"
+        tools:ignore="HardcodedText" />
+    <!-- 2 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apathytxt"
+        android:text="3.Nescience-\t\t'NES'-si-'ensː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/nescience"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nesciencetxt"
+        android:layout_toEndOf="@+id/nescience"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but3"
+        android:onClick="onBut3"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tLack of Knowledge | Awareness."
+        android:layout_below="@id/nescience"
+        android:textSize="18sp"
+        android:id="@+id/nesciencetxt"
+        tools:ignore="HardcodedText" />
+    <!-- 3 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nesciencetxt"
+        android:text="4.Grotesque-\t\t'gre-teskː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/gratesque"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gratesquetxt"
+        android:layout_toEndOf="@+id/gratesque"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but4"
+        android:onClick="onBut4"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tComically | repulsively ugly."
+        android:layout_below="@id/gratesque"
+        android:textSize="18sp"
+        android:id="@+id/gratesquetxt"
+        tools:ignore="HardcodedText" />
+    <!-- 4 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gratesquetxt"
+        android:text="5.Obviate-\t\t'OB-vi-aytː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/obviate"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/obviatetxt"
+        android:layout_toEndOf="@+id/obviate"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but5"
+        android:onClick="onBut5"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tRemove."
+        android:layout_below="@id/obviate"
+        android:textSize="18sp"
+        android:id="@+id/obviatetxt"
+        tools:ignore="HardcodedText" />
+    <!-- 5 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/obviatetxt"
+        android:textColor="@android:color/background_dark"
+        android:text="6.Malign-\t\t'me-Linː'\t\t"
+        android:textSize="20sp"
+        android:id="@+id/malign"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/maligntxt"
+        android:layout_toEndOf="@+id/malign"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but6"
+        android:onClick="onBut6"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tEvil in nature|effect."
+        android:layout_below="@id/malign"
+        android:textSize="18sp"
+        android:id="@+id/maligntxt"
+        tools:ignore="HardcodedText" />
+    <!-- 6 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maligntxt"
+        android:text="7.Acquiesce-\t\t'akwi-esː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/acquiesce"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/acquiescetxt"
+        android:layout_toEndOf="@+id/acquiesce"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but7"
+        android:onClick="onBut7"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tAccept something reductanly but without protest."
+        android:layout_below="@id/acquiesce"
+        android:textSize="18sp"
+        android:id="@+id/acquiescetxt"
+        tools:ignore="HardcodedText" />
+    <!-- 7 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acquiescetxt"
+        android:text="8.Prognostic-\t\t'Prog-nastikː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/prognostic"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prognostictxt"
+        android:layout_toEndOf="@+id/prognostic"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but8"
+        android:onClick="onBut8"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tRelating to or serving to predict the likely course of a medical condition."
+        android:layout_below="@id/prognostic"
+        android:textSize="18sp"
+        android:id="@+id/prognostictxt"
+        tools:ignore="HardcodedText" />
+    <!-- 8 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prognostictxt"
+        android:text="9.Effigy-\t\t'efidziː'\t\t"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/effigy"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/effigytxt"
+        android:layout_toEndOf="@+id/effigy"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but9"
+        android:onClick="onBut9"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tA sculpture/model of person."
+        android:layout_below="@id/effigy"
+        android:textSize="18sp"
+        android:id="@+id/effigytxt"
+        tools:ignore="HardcodedText" />
+    <!-- 9 completed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/effigytxt"
+        android:text="10.Bibulous-\t\t'bib-Yoo-lesː'\t\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:id="@+id/bibulous"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bibuloustxt"
+        android:layout_toEndOf="@+id/bibulous"
+        android:background="@color/transparent"
+        android:contentDescription="speak"
+        android:src="@drawable/ic_action_sound"
+        android:id="@+id/but10"
+        android:onClick="onBut10"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tAddict to drink."
+        android:layout_below="@id/bibulous"
+        android:textSize="18sp"
+        android:id="@+id/bibuloustxt"
+        tools:ignore="HardcodedText" />
+    <!-- 10 completed -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="@drawable/butblack"
+        android:layout_below="@id/bibuloustxt"
+        android:onClick="onNext1"/>
+
+</RelativeLayout>
+
+</ScrollView>

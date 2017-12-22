@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book4"
+    tools:context="com.karthi.acpage1.Page2a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading Part2"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/page1atitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/reading"
+        android:layout_below="@id/page1atitle"
+        android:text="\tLevel 2\t"
+        android:textColor="@android:color/background_dark"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/reading"
+            android:id="@+id/img22"
+            android:src="@drawable/reading1"
+            android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img22"
+        android:id="@+id/page1adesc"
+        android:padding="7dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:elevation="20dp"
+            app:cardElevation="20dp">
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\t\t\t\t\tReady to read some more words.Here are some more words for you."
+                android:textSize="25sp"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page1adesc"
+        android:text="start"
+        android:textSize="15sp"
+        android:background="@drawable/butwhite"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onGame1a"/>
+
+</RelativeLayout>

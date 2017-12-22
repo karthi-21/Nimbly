@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book11"
+    tools:context="com.karthi.acpage1.Page1a">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Congratulations "
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:background="#483C24"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cong"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cong"
+        android:text="Target 50 words in 2.5 mins."
+        android:textStyle="bold"
+        android:background="#483C24"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cong1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cong1"
+        android:id="@+id/txext1">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="#3D96C2"
+            tools:ignore="UnusedAttribute">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:id="@+id/txext"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:editable="true"
+                android:layout_marginBottom="15dp"
+                tools:ignore="Deprecated,TextViewEdits" />
+
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="check"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/checkk"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/practice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="'Practice makes the man Perfect'"
+        android:textColor="@android:color/background_dark"
+        android:background="#fff"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/txext1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/practice"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Next"
+        android:textColor="@android:color/background_dark"
+        android:background="@drawable/butwhite"
+        android:id="@+id/butpage1a" />
+
+    </RelativeLayout>
+
+</ScrollView>

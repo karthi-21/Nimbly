@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nimbly</string>
+    <string name="fact_3">The oldest word in the English language is \'town\'</string>
+    <string name="douno">Do you know?</string>
+    <string name="fact">Fact !</string>
+    <string name="speech_not_supported">speech not supported</string>
+    <string name="speech_prompt">say something</string>
+    <string name="fact_2">The shortest complete sentence in the English language is \'I am\'.</string>
+    <string name="fact_1">The 26 letters of our alphabet can make 403,290,000,000,000,000,000,000,000 different combinations.</string>
+</resources>

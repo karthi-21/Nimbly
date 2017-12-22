@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book3"
+    tools:context="com.karthi.acpage1.Page2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading part"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="45sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/page1title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\tLevel-2\t"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:layout_below="@id/page1title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/level2"
+        android:background="@android:color/white"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/level2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imglvl2"
+        android:src="@drawable/teenreading"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/page1descp"
+        android:layout_below="@id/imglvl2"
+        android:padding="5dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="15dp"
+            tools:ignore="UnusedAttribute">
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                android:text="NOTE:\n\t\t\tThere are audio symbols near every words to help you pronounce better.When you touch,it sounds(all the best)."
+                android:textSize="20sp"
+               />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/page1descp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onGame1"
+        android:background="@drawable/butwhite"
+        android:text="Start"/>
+
+</RelativeLayout>

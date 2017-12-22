@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    tools:context="com.karthi.acpage1.Game2a"
+    tools:ignore="RtlSymmetry"
+    android:paddingLeft="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reading Part-2"
+            android:fontFamily="serif"
+            android:textSize="35sp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/heading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Can you pronounce the words?"
+            android:layout_below="@id/heading"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/headqus"/>
+        <!-- words below-->
+        <TextView
+            android:layout_below="@id/headqus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.Dolorous-\t\t'dol-er-esː'\t\t"
+            android:textSize="20sp"
+            android:id="@+id/dolorous"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headqus"
+            android:layout_above="@+id/doloroustxt"
+            android:layout_toEndOf="@+id/dolorous"
+            android:background="@color/transparent"
+            android:contentDescription="speak"
+            android:src="@drawable/ic_action_sound"
+            android:id="@+id/but11"
+            android:onClick="onBut11"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tSorrowfull."
+            android:layout_below="@id/dolorous"
+            android:textSize="18sp"
+            android:id="@+id/doloroustxt"
+            tools:ignore="HardcodedText" />
+        <!-- 11 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doloroustxt"
+            android:text="12.Querulous-\t'Kwer-yoo-lesː'\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:id="@+id/querulous"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/queruloustxt"
+            android:layout_toEndOf="@+id/querulous"
+            android:background="@color/transparent"
+            android:contentDescription="speak"
+            android:src="@drawable/ic_action_sound"
+            android:id="@+id/but12"
+            android:onClick="onBut12"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tComplaining."
+            android:layout_below="@id/querulous"
+            android:textSize="18sp"
+            android:id="@+id/queruloustxt"
+            tools:ignore="HardcodedText" />
+        <!-- 12 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/queruloustxt"
+            android:text="13.Ubiquity-\t\t'Ju-bikwitiː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:id="@+id/ubiquity"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ubiquitytxt"
+            android:layout_toEndOf="@+id/ubiquity"
+            android:background="@color/transparent"
+            android:contentDescription="speak"
+            android:src="@drawable/ic_action_sound"
+            android:id="@+id/but13"
+            android:onClick="onBut13"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tThe fact of appearing everwhere."
+            android:layout_below="@id/ubiquity"
+            android:textSize="18sp"
+            android:id="@+id/ubiquitytxt"
+            tools:ignore="HardcodedText" />
+        <!-- 13 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ubiquitytxt"
+            android:text="14.Labyrinth-\t\t'Lab-(e)-rinː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:id="@+id/labyrinth"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/labyrinthtxt"
+            android:layout_toEndOf="@+id/labyrinth"
+            android:background="@color/transparent"
+            android:contentDescription="speak"
+            android:src="@drawable/ic_action_sound"
+            android:id="@+id/but14"
+            android:onClick="onBut14"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tA maze/Complicated network."
+            android:layout_below="@id/labyrinth"
+            android:textSize="18sp"
+            android:id="@+id/labyrinthtxt"
+            tools:ignore="HardcodedText" />
+        <!-- 14 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labyrinthtxt"
+            android:text="15.Regicide-\t\t'redzisaidː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:id="@+id/regicide"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/regicidetxt"
+            android:layout_toEndOf="@+id/regicide"
+            android:background="@color/transparent"
+            android:contentDescription="speak"
+            android:src="@drawable/ic_action_sound"
+            android:id="@+id/but15"
+            android:onClick="onBut15"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tAction of hilling a king."
+            android:layout_below="@id/regicide"
+            android:textSize="18sp"
+            android:id="@+id/regicidetxt"
+            tools:ignore="HardcodedText" />
+        <!-- 15 completed -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16.Alma mater-\t'alme-ma MAH-teː'\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="19sp"
+            android:id="@+id/almamater"
+            android:layout_below="@id/regicidetxt"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/almamater"
+            android:layout_above="@+id/almamatertxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but16"
+            android:onClick="onBut16"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tThe university/School."
+            android:layout_below="@id/almamater"
+            android:id="@+id/almamatertxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 16 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17.Verbiage-\t\t'ver-bi-ijː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/almamatertxt"
+            android:textSize="20sp"
+            android:id="@+id/verbiage"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/verbiage"
+            android:layout_above="@+id/verbiagetxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but17"
+            android:onClick="onBut17"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tTechnical speech/Exessively length."
+            android:layout_below="@id/verbiage"
+            android:id="@+id/verbiagetxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 17 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.Militate-\t\t'mil-taytː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_below="@id/verbiagetxt"
+            android:id="@+id/militate"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/militate"
+            android:layout_above="@+id/militatetxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but18"
+            android:onClick="onBut18"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tBe a powerfull/Conclusive factor in preventing."
+            android:layout_below="@id/militate"
+            android:id="@+id/militatetxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 18 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19.Iconoclast-\t\t'i=kon-e-klastː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_below="@id/militatetxt"
+            android:id="@+id/iconoclast"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconoclast"
+            android:layout_above="@+id/iconoclasttxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but19"
+            android:onClick="onBut19"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tA person who attacks."
+            android:layout_below="@id/iconoclast"
+            android:id="@+id/iconoclasttxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 19 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.Uxoricide-\t\t'uk-saw-ri-sidː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_below="@id/iconoclasttxt"
+            android:id="@+id/uxoricide"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/uxoricide"
+            android:layout_above="@+id/uxoricidetxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but20"
+            android:onClick="onBut20"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tKilling of one's wife."
+            android:layout_below="@id/uxoricide"
+            android:id="@+id/uxoricidetxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 20 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.Creed-\t\t'kreedː'\t\t"
+            android:layout_below="@id/uxoricidetxt"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/creed"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/creed"
+            android:layout_above="@+id/creedtxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but21"
+            android:onClick="onBut21"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tA system of religious belief."
+            android:layout_below="@id/creed"
+            android:id="@+id/creedtxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 21 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22.Equine-\t\e-kwinː'\t\t"
+            android:textSize="20sp"
+            android:layout_below="@id/creedtxt"
+            android:id="@+id/equine"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/equine"
+            android:layout_above="@+id/equinetxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but22"
+            android:onClick="onBut22"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tRelating to."
+            android:layout_below="@id/equine"
+            android:id="@+id/equinetxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 22 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23.Harridan-\t\t'har-i-den:'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:id="@+id/harridan"
+            android:layout_below="@id/equinetxt"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/harridan"
+            android:layout_above="@+id/harridantxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but23"
+            android:onClick="onBut23"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tA strict/Bossy."
+            android:layout_below="@id/harridan"
+            android:id="@+id/harridantxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 23 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24.Sororicide-\t\t'so-ror-i-sidː'\t\t"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/harridantxt"
+            android:id="@+id/sororicide"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sororicide"
+            android:layout_above="@id/sororicidetxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but24"
+            android:onClick="onBut24"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tKilling of one's sister."
+            android:layout_below="@id/sororicide"
+            android:id="@+id/sororicidetxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 24 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25.Chauvinism-\t\t'sho-ve-niz-emː'\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_below="@id/sororicidetxt"
+            android:id="@+id/chauvinism"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/chauvinism"
+            android:layout_above="@+id/chauvinismtxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but25"
+            android:onClick="onBut25"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tExaggerated/Aggressive patriotism."
+            android:layout_below="@id/chauvinism"
+            android:id="@+id/chauvinismtxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 25 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26.Misogamy-\t\t'mi-sog-e-miː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_below="@id/chauvinismtxt"
+            android:id="@+id/misogamy"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/misogamy"
+            android:layout_above="@+id/misogamytxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but26"
+            android:onClick="onBut26"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dislike of/Aversion to marriage."
+            android:layout_below="@id/misogamy"
+            android:id="@+id/misogamytxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 26 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27.Gauche-\t\t'GOSHː'\t\t"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@id/misogamytxt"
+            android:id="@+id/gauche"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/gauche"
+            android:layout_above="@+id/gauchetxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but27"
+            android:onClick="onBut27"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tUnsophisticated and socially awkward."
+            android:layout_below="@id/gauche"
+            android:id="@+id/gauchetxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 27 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28.Dexterous-\t\t'desk-tresː'\t\t"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_below="@id/gauchetxt"
+            android:id="@+id/dexterous"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dexterous"
+            android:layout_above="@+id/dexteroustxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but28"
+            android:onClick="onBut28"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tShowing/Having skill."
+            android:layout_below="@id/dexterous"
+            android:id="@+id/dexteroustxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 28 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:text="29.Adroit-\t\t'e-droyt'\t\t"
+            android:textSize="20sp"
+            android:layout_below="@id/dexteroustxt"
+            android:id="@+id/adroit"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/adroit"
+            android:layout_above="@+id/adroittxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but29"
+            android:onClick="onBut29"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tClever."
+            android:layout_below="@id/adroit"
+            android:id="@+id/adroittxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 29 completed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30.Sphygmomanomenter-\n\t\t'sfig-mo-me-nom-i-teː'\t\t"
+            android:textSize="20sp"
+            android:layout_below="@id/adroittxt"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/sphygmomanomenter"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sphygmomanomenter"
+            android:layout_above="@+id/sphygmomanomentertxt"
+            android:src="@drawable/ic_action_sound"
+            android:background="@color/transparent"
+            android:id="@+id/but30"
+            android:onClick="onBut30"
+            android:contentDescription="speak"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\tAn instrument for measuring blood pressure."
+            android:layout_below="@id/sphygmomanomenter"
+            android:id="@+id/sphygmomanomentertxt"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+        <!-- 30 completed -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/butblack"
+            android:layout_below="@id/sphygmomanomentertxt"
+            android:onClick="onPage1Test"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karthi.acpage1.Game2t">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tBuild your\t\n vocabulary"
+        android:fontFamily="serif"
+        android:textSize="35sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gameTestTit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameTestTit"
+        android:id="@+id/gameTestTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/background_dark"
+        android:text="Can you work with the words?"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <!--startsv -->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_action_sound"
+        android:layout_below="@id/gameTestTitle"
+        android:id="@+id/ibut1"
+        android:onClick="speak1"
+        android:background="@color/transparent"/>
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="10dp"
+       android:layout_toEndOf="@id/ibut1"
+       android:id="@+id/editbox1"
+       android:inputType="textFilter|text|textNoSuggestions"
+       android:layout_below="@id/gameTestTitle"
+       android:hint="Enter your answer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/editbox1"
+        android:text="check"
+        android:clickable="true"
+        android:onClick="check1"
+        android:id="@+id/button"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox1"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:text="result"
+        android:id="@+id/worng1"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox1"
+        android:layout_toStartOf="@id/worng1"
+        android:editable="true"
+        android:textSize="20sp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/green"
+        android:id="@+id/correct1"
+        />
+    <!--1 completed-->
+
+    <!--startsv -->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_action_sound"
+        android:layout_below="@id/button"
+        android:id="@+id/ibut2"
+        android:onClick="speak2"
+        android:background="@color/transparent"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/ibut2"
+        android:id="@+id/editbox2"
+        android:inputType="textFilter|text|textNoSuggestions"
+        android:layout_below="@id/button"
+        android:hint="Enter your answer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/editbox2"
+        android:text="check"
+        android:clickable="true"
+        android:onClick="check2"
+        android:id="@+id/button2"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox2"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:text="result"
+        android:layout_marginTop="5dp"
+        android:id="@+id/worng2"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox2"
+        android:layout_toStartOf="@id/worng2"
+        android:editable="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/green"
+        android:id="@+id/correct2"
+        />
+    <!--2 completed-->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_action_sound"
+        android:layout_below="@id/button2"
+        android:id="@+id/ibut3"
+        android:onClick="speak3"
+        android:background="@color/transparent"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/ibut3"
+        android:id="@+id/editbox3"
+        android:inputType="textFilter|text|textNoSuggestions"
+        android:layout_below="@id/button2"
+        android:hint="Enter your answer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/editbox3"
+        android:text="check"
+        android:clickable="true"
+        android:onClick="check3"
+        android:id="@+id/button3"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox3"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:text="result"
+        android:layout_marginTop="5dp"
+        android:id="@+id/worng3"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox3"
+        android:layout_toStartOf="@id/worng3"
+        android:editable="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/green"
+        android:id="@+id/correct3"
+        />
+    <!--3 completed-->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_action_sound"
+        android:layout_below="@id/button3"
+        android:id="@+id/ibut4"
+        android:onClick="speak4"
+        android:background="@color/transparent"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/ibut4"
+        android:id="@+id/editbox4"
+        android:inputType="textFilter|text|textNoSuggestions"
+        android:layout_below="@id/button3"
+        android:hint="Enter your answer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/editbox4"
+        android:text="check"
+        android:clickable="true"
+        android:onClick="check4"
+        android:id="@+id/button4"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox4"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:text="result"
+        android:layout_marginTop="5dp"
+        android:id="@+id/worng4"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox4"
+        android:layout_toStartOf="@id/worng4"
+        android:editable="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/green"
+        android:id="@+id/correct4"
+        />
+    <!--4 completed-->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_action_sound"
+        android:layout_below="@id/button4"
+        android:id="@+id/ibut5"
+        android:onClick="speak5"
+        android:background="@color/transparent"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/ibut5"
+        android:id="@+id/editbox5"
+        android:inputType="textFilter|text|textNoSuggestions"
+        android:layout_below="@id/button4"
+        android:hint="Enter your answer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/editbox5"
+        android:text="check"
+        android:clickable="true"
+        android:onClick="check5"
+        android:id="@+id/button5"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox5"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:text="result"
+        android:layout_marginTop="5dp"
+        android:id="@+id/worng5"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbox5"
+        android:layout_toStartOf="@id/worng5"
+        android:editable="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/green"
+        android:id="@+id/correct5"
+        />
+    <!--5 completed-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_action_sound"
+            android:layout_below="@id/button5"
+            android:id="@+id/ibut6"
+            android:onClick="speak6"
+            android:background="@color/transparent"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/ibut6"
+            android:id="@+id/editbox6"
+            android:inputType="textFilter|text|textNoSuggestions"
+            android:layout_below="@id/button5"
+            android:hint="Enter your answer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/editbox6"
+            android:text="check"
+            android:clickable="true"
+            android:onClick="check6"
+            android:id="@+id/button6"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox6"
+            android:layout_alignParentEnd="true"
+            android:editable="true"
+            android:text="result"
+            android:id="@+id/worng6"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox6"
+            android:layout_toStartOf="@id/worng6"
+            android:editable="true"
+            android:textSize="20sp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/green"
+            android:id="@+id/correct6"
+            />
+        <!--6 completed-->
+
+        <!--startsv -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_sound"
+            android:layout_below="@id/button6"
+            android:id="@+id/ibut7"
+            android:onClick="speak7"
+            android:background="@color/transparent"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ibut7"
+            android:id="@+id/editbox7"
+            android:inputType="textFilter|text|textNoSuggestions"
+            android:layout_below="@id/button6"
+            android:hint="Enter your answer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/editbox7"
+            android:text="check"
+            android:clickable="true"
+            android:onClick="check7"
+            android:id="@+id/button7"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox7"
+            android:layout_alignParentEnd="true"
+            android:editable="true"
+            android:text="result"
+            android:layout_marginTop="5dp"
+            android:id="@+id/worng7"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox7"
+            android:layout_toStartOf="@id/worng7"
+            android:editable="true"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/green"
+            android:id="@+id/correct7"
+            />
+        <!--7 completed-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_sound"
+            android:layout_below="@id/button7"
+            android:id="@+id/ibut8"
+            android:onClick="speak8"
+            android:background="@color/transparent"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ibut8"
+            android:id="@+id/editbox8"
+            android:inputType="textFilter|text|textNoSuggestions"
+            android:layout_below="@id/button7"
+            android:hint="Enter your answer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/editbox8"
+            android:text="check"
+            android:clickable="true"
+            android:onClick="check8"
+            android:id="@+id/button8"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox8"
+            android:layout_alignParentEnd="true"
+            android:editable="true"
+            android:text="result"
+            android:layout_marginTop="5dp"
+            android:id="@+id/worng8"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox8"
+            android:layout_toStartOf="@id/worng8"
+            android:editable="true"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/green"
+            android:id="@+id/correct8"
+            />
+        <!--8 completed-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_sound"
+            android:layout_below="@id/button8"
+            android:id="@+id/ibut9"
+            android:onClick="speak9"
+            android:background="@color/transparent"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ibut9"
+            android:id="@+id/editbox9"
+            android:inputType="textFilter|text|textNoSuggestions"
+            android:layout_below="@id/button8"
+            android:hint="Enter your answer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/editbox9"
+            android:text="check"
+            android:clickable="true"
+            android:onClick="check9"
+            android:id="@+id/button9"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox9"
+            android:layout_alignParentEnd="true"
+            android:editable="true"
+            android:text="result"
+            android:layout_marginTop="5dp"
+            android:id="@+id/worng9"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox9"
+            android:layout_toStartOf="@id/worng9"
+            android:editable="true"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/green"
+            android:id="@+id/correct9"
+            />
+        <!--9 completed-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_sound"
+            android:layout_below="@id/button9"
+            android:id="@+id/ibut10"
+            android:onClick="speak10"
+            android:background="@color/transparent"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ibut10"
+            android:id="@+id/editbox10"
+            android:inputType="textFilter|text|textNoSuggestions"
+            android:layout_below="@id/button9"
+            android:hint="Enter your answer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/editbox10"
+            android:text="check"
+            android:clickable="true"
+            android:onClick="check10"
+            android:id="@+id/button10"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox10"
+            android:layout_alignParentEnd="true"
+            android:editable="true"
+            android:text="result"
+            android:layout_marginTop="5dp"
+            android:id="@+id/worng10"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editbox10"
+            android:layout_toStartOf="@id/worng10"
+            android:editable="true"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/green"
+            android:id="@+id/correct10"
+            />
+        <!--5 completed-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/butblack"
+            android:id="@+id/onPage3"
+            android:onClick="onPage3"
+            android:layout_below="@+id/correct10"
+            android:text="Result"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B3E5FC"
+    tools:context="com.karthi.acpage1.Game1">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Game and Gain"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/id_timer"
+        android:text="0:00:000"
+        android:textSize="40sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<android.support.v7.widget.CardView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="#7FFF"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_name"
+            android:background="@color/transparent"
+            android:onClick="finish"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"
+            android:text="Hint:\n\tLeave space between the words you type.\n\t\t\t\t\t50 words --> 2.5 minutes \n(stops automatically after 2.5 mins)"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type here..."
+        android:inputType="textFilter|text|textNoSuggestions"
+        android:id="@+id/edit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
