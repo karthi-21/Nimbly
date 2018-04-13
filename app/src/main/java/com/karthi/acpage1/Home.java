@@ -24,4 +24,9 @@ public class Home extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
        startActivity(intent);
     }
+
+    public void bot(View view) {
+        Intent intent=new Intent(this,BotActivity.class);
+        startActivity(intent);
+    }
 }

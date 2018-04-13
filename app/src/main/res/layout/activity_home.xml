@@ -108,11 +108,15 @@
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="bot"
                     android:layout_gravity="center">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
+                        android:clickable="true"
+                        android:onClick="bot"
                         android:gravity="center">
 
                         <ImageView
@@ -120,19 +124,25 @@
                             android:layout_height="54dp"
                             android:background="@drawable/drawablepurple"
                             app:srcCompat="@drawable/icfact"
+                            android:clickable="true"
+                            android:onClick="bot"
                             android:padding="10dp"
                             tools:ignore="VectorDrawableCompat" />
                         <View
                             android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:onClick="bot"
                             android:layout_height="1dp"
                             android:background="@color/grayLine"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:clickable="true"
+                            android:onClick="bot"
                             android:textColor="#000"
-                            android:text="facts"
+                            android:text="Bot"
                             android:layout_marginTop="10dp"/>
 
                     </LinearLayout>

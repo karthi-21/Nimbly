@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "738986844059",
+    "firebase_url": "https://nimbly-59657.firebaseio.com",
+    "project_id": "nimbly-59657",
+    "storage_bucket": "nimbly-59657.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738986844059:android:770409fe5cba6e91",
+        "android_client_info": {
+          "package_name": "com.karthi.acpage1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738986844059-8gs8sv0fb6a6lps020g3ke7oo2h1uqdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karthi.acpage1",
+            "certificate_hash": "483e0b7b881547aea5b52edefcc1928d55a41e18"
+          }
+        },
+        {
+          "client_id": "738986844059-u7uf2ek5pd0kfhfh2p1t8qlcic4165l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZITzYqTP5Ka83_L8U7SDo2nIQhtZIc6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738986844059-u7uf2ek5pd0kfhfh2p1t8qlcic4165l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
